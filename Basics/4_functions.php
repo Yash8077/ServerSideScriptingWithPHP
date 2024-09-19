@@ -93,12 +93,14 @@ echo "<br>";
 // Searching for a value in an array   
 $fruits = ["apple", "banana", "orange"];
 $searchValue = "banana";
-$searchResult = array_search($searchValue, $fruits);
-if ($searchResult !== false) {
-    echo "Found at index: " . $searchResult;
-} else {
-    echo "Not found";
-}
+
+$arr=["a"=>"1","b"=>1];
+echo array_search(1, $arr,true);
+// if ($searchResult !== false) {
+//     echo "Found at index: " . $searchResult;
+// } else {
+//     echo "Not found";
+// }
 ?>
 </body>
 </html>
